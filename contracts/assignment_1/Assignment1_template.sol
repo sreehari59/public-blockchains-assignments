@@ -37,7 +37,8 @@ import "./INFTMINTER.sol";
 contract Assignment1 is INFTMINTER, ERC721URIStorage, BaseAssignment {
 
     
-    // TODO: The ipfs hash of an image that you uploaded to IPFS.
+    // TODO: 
+    // Add the ipfs hash of an image that you uploaded to IPFS.
     string IPFSHash = "";
 
     // Total supply.
@@ -46,11 +47,13 @@ contract Assignment1 is INFTMINTER, ERC721URIStorage, BaseAssignment {
     // Current price. See also: https://www.cryps.info/en/Gwei_to_ETH/1/
     uint256 private price = 0.001 ether; 
 
-    // TODO: add more variables.
+    // TODO: 
+    // Add more state variables, as needed.
 
-    // TODO: Change the Token name.
+    // TODO: 
+    // Adjust the Token name and ticker as you like.
     // Very important! The validator address must be passed to the 
-    // BaseAssignment constructor.
+    // BaseAssignment constructor (already inserted here).
     constructor()
         ERC721("Token", "TKN")
         BaseAssignment(0x80A2FBEC8E3a12931F68f1C1afedEf43aBAE8541)
