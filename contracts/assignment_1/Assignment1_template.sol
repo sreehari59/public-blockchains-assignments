@@ -64,26 +64,27 @@ contract Assignment1 is INFTMINTER, ERC721URIStorage, BaseAssignment {
         
         // Your code here!
 
-        // 1. First, check the conditions for minting are met.
+        // 1. First, check if the conditions for minting are met.
 
         // 2. Then increment total supply and price.
        
-        // 3. Get current token id, after incrementing it.
-        // Open Zeppelin has methods for this.
+        // 3. Get the current token id, after incrementing it.
+        // Hint: Open Zeppelin has methods for this.
 
         // 4. Mint the token.
-        // Open Zeppelin has a method for this.
+        // Hint: Open Zeppelin has a method for this.
 
         // 5. Compose the token URI with metadata info.
         // You might use the helper function getTokenURI.
         // Make sure to keep the data in "memory."
-        // Learn about data locations.
+        // Hint: Learn about data locations.
         // https://dev.to/jamiescript/data-location-in-solidity-12di
         // https://solidity-by-example.org/data-locations/
         
-        // 6. Set encoded token URI to token
+        // 6. Set encoded token URI to token.
+        // Hint: Open Zeppelin has a method for this.
         
-        // 7. Return the item id.
+        // 7. Return the NFT id.
     }
 
 
@@ -102,25 +103,25 @@ contract Assignment1 is INFTMINTER, ERC721URIStorage, BaseAssignment {
         view
         returns (string memory)
     {
-        // Build dataURI
+        // Build dataURI.
         bytes memory dataURI = abi.encodePacked(
             "{",
             '"name": "My beautiful artwork #',
             tokenId.toString(),
-            '"', // Name of NFT with id
+            '"', // Name of NFT with id.
             '"hash": "',
             IPFSHash,
-            '",', // Define hash of your artwork from IPFS
+            '",', // Define hash of your artwork from IPFS.
             '"by": "',
             getOwner(),
-            '",', // Address of creator
+            '",', // Address of creator.
             '"new_owner": "',
             newOwner,
-            '"', // Address of new owner
+            '"', // Address of new owner.
             "}"
         );
 
-        // Encode dataURI using base64 and return
+        // Encode dataURI using base64 and return it.
         return
             string(
                 abi.encodePacked(
