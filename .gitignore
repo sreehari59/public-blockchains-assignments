@@ -1,0 +1,25 @@
+node_modules
+
+build/contracts/*
+
+.idea
+
+.env
+node_modules
+.env
+coverage
+coverage.json
+typechain
+typechain-types
+
+contracts/assignment_1/Assignment1.sol
+scripts/assignment_1/interact.js
+
+assignment_2
+assignment_3
+assignment_4
+
+# Hardhat files
+cache
+artifacts
+
