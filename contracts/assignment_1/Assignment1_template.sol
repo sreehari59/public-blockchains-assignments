@@ -85,7 +85,7 @@ contract Assignment1 is INFTMINTER, ERC721URIStorage, BaseAssignment {
 
 
     // TODO: 
-    // Other methods of the INFTMINTER interface's methods to be added here. 
+    // Other methods of the INFTMINTER interface to be added here. 
     // Hint: all methods of an interface are external, but here you might
     // need to adjust them to public.
 
